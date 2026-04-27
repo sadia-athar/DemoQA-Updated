@@ -9,7 +9,7 @@ test.describe('Practice Form', () => {
         await practiceFormActions.navigateToPracticeForm();
     });
 
-    test('TC03 - Verify user can submit the form', async () => {
+    test('Verify user can submit the form', async () => {
         await practiceFormActions.fillAndSubmitForm();
         await practiceFormActions.verifyFormSubmitted();
     });
