@@ -9,7 +9,7 @@ test.describe('Broken Links - Images', () => {
         await brokenLinksActions.navigateToBrokenLinks();
     });
 
-    test('TC02 - Verify broken image', async () => {
+    test('TC02 Verify broken image', async () => {
         await brokenLinksActions.verifyBrokenImage();
     });
 });
