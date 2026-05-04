@@ -9,14 +9,14 @@ test.describe('Web Tables', () => {
         await webTablesActions.navigateToWebTables();
     });
 
-    test('TC01-A - Verify user can enter new data into the table', async () => {
+    test('Verify user can enter new data into the table', async () => {
         await webTablesActions.clickAddButton();
         await webTablesActions.fillNewRecordForm();
         await webTablesActions.clickSubmitButton();
         await webTablesActions.verifyNewRecordAdded();
     });
 
-    test('TC01-B - Verify user can edit the row in a table', async ({ page }) => {
+    test('Verify user can edit the row in a table', async ({ page }) => {
         await page.goto('/webtables');
         await webTablesActions.clickEditButtonForRow();
         await webTablesActions.editRecord();

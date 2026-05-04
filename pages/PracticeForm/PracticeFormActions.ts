@@ -30,7 +30,7 @@ export class PracticeFormActions {
         await this.selectors.monthDropdown.selectOption('January');
         await this.selectors.yearDropdown.selectOption('1990');
         await this.page.getByText('15', { exact: true }).click();
-        await this.page.keyboard.press('Enter');
+        //await this.page.keyboard.press('Enter');
         await this.selectors.subjectsInput.fill(data.subjects);
         await this.selectors.hobbiesReading.click();
         await this.selectors.uploadPicture.setInputFiles('Test-data/uploads/sample.jpg');
